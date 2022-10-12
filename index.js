@@ -64,6 +64,8 @@ app.post('/api/login', async (req, res) => {
 
 })
 
-app.listen(1337, () => {
-    console.log("server started on 1337")
+var port = process.env.PORT || 3000;
+
+app.listen('port',port, () => {
+    console.log("server started on 3000")
 })
